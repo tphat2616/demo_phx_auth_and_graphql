@@ -54,6 +54,17 @@ config :demo_phx_auth_and_graphql, DemoPhxAuthAndGraphqlWeb.Endpoint,
 # configured to run both http and https servers on
 # different ports.
 
+# Watch static and templates for browser reloading.
+config :demo_phx_auth_and_graphql, DemoPhxAuthAndGraphqlWeb.Endpoint,
+  live_reload: [
+    patterns: [
+      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
+      ~r"priv/gettext/.*(po)$",
+      ~r"lib/demo_phx_auth_and_graphql_web/(live|views)/.*(ex)$",
+      ~r"lib/demo_phx_auth_and_graphql_web/templates/.*(eex)$"
+    ]
+  ]
+
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"
 

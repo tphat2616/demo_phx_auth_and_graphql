@@ -13,10 +13,10 @@ config :demo_phx_auth_and_graphql,
 # Configures the endpoint
 config :demo_phx_auth_and_graphql, DemoPhxAuthAndGraphqlWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "/LUUThpVVhL9I7xXjTvcFHrBfoj2nxstkyMPfRNWClGT+BsqddlfSBgI69yJ1kN0",
-  render_errors: [view: DemoPhxAuthAndGraphqlWeb.ErrorView, accepts: ~w(json), layout: false],
+  secret_key_base: "+6QQNHYGZfvpDXEMkgMevcPRkucGTZ+3MhQqcKnHCPOJuM2PZfg7gbEwdlFi7T7J",
+  render_errors: [view: DemoPhxAuthAndGraphqlWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: DemoPhxAuthAndGraphql.PubSub,
-  live_view: [signing_salt: "l07VUE/C"]
+  live_view: [signing_salt: "kz1PmvSJ"]
 
 # Configures Elixir's Logger
 config :logger, :console,
