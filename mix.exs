@@ -33,6 +33,7 @@ defmodule DemoPhxAuthAndGraphql.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:pbkdf2_elixir, "~> 1.0"},
       {:phoenix, "~> 1.5.9"},
       {:phoenix_ecto, "~> 4.1"},
       {:ecto_sql, "~> 3.4"},
@@ -43,9 +44,12 @@ defmodule DemoPhxAuthAndGraphql.MixProject do
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
-      {:jason, "~> 1.0"},
+      {:jason, "~> 1.1"},
       {:plug_cowboy, "~> 2.0"},
       {:phx_gen_auth, "~> 0.4.0", only: [:dev], runtime: false},
+      {:poison, "~> 3.1"},
+      {:absinthe, "~> 1.6"},
+      {:absinthe_plug, "~> 1.5"},
     ]
   end
 

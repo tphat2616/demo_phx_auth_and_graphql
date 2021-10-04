@@ -3,6 +3,7 @@ defmodule DemoPhxAuthAndGraphqlWeb.UserSocket do
 
   ## Channels
   # channel "room:*", DemoPhxAuthAndGraphqlWeb.RoomChannel
+  channel("order_respond:*", DemoPhxAuthAndGraphqlWeb.OrderResponseChannel)
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After

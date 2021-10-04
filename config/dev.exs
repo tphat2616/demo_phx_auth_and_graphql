@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :demo_phx_auth_and_graphql, DemoPhxAuthAndGraphql.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "123456",
   database: "demo_phx_auth_and_graphql_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
